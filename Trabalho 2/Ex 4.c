@@ -39,7 +39,15 @@ int main()
         }
     }
     else{
-        tempTotal = 1;
+        if(chegadaMin < saidaMin){
+            tempTotal = 1;
+        }
+        else if(chegadaMin > saidaMin){
+            tempTotal = 24;
+        }
+        else if(chegadaMin = saidaMin){
+            tempTotal = 24;
+        }
     }
     printf("Voce pagara por %d horas de estacionamento!",tempTotal);
     if(tempTotal <= 2){
