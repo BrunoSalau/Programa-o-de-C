@@ -3,7 +3,7 @@
 
 int main()
     {
-    int chegadaHr,chegadaMin,saidaHr,saidaMin,tempHr,tempMin,tempTotal;
+    int chegadaHr,chegadaMin,saidaHr,saidaMin,tempTotal;
     double valor;
     printf("Qual foi o seu horario de chegada em...\n");
     printf("\nhoras:");
@@ -20,26 +20,23 @@ int main()
     printf("\nHorario de Saida: %d:%d",saidaHr,saidaMin);
     printf("\n==================================================\n");
     if(chegadaHr < saidaHr){
-        tempHr = saidaHr - chegadaHr;
+        tempTotal = saidaHr - chegadaHr;
         if(chegadaMin < saidaMin){
-            tempTotal = tempHr + 1; /*Se o minuto de saida for maior que o minuto de chegada acresenta uma hora no tempo do valor*/
+            tempTotal = tempTotal + 1; /*Se o minuto de saida for maior que o minuto de chegada acresenta uma hora no tempo do valor*/
         }
         else{
-            tempTotal = tempHr;
+            tempTotal = tempTotal;
         }
-        /*printf("\nSera constado que no valor do pagamento que voce passou %d de horas no estacionamento\n",tempTotal);*/
-
     }
     else if(chegadaHr > saidaHr){
-        tempHr = chegadaHr - saidaHr;
-        tempHr = 24 - tempHr;
+        tempTotal = chegadaHr - saidaHr;
+        tempTotal = 24 - tempTotal;
         if(chegadaMin < saidaMin){
-            tempTotal = tempHr + 1; /*Se o minuto de saida for maior que o minuto de chegada acresenta uma hora no tempo do valor*/
+            tempTotal = tempTotal + 1; /*Se o minuto de saida for maior que o minuto de chegada acresenta uma hora no tempo do valor*/
         }
         else{
-            tempTotal = tempHr;
+            tempTotal = tempTotal;
         }
-        /*printf("\nSera constado que no valor do pagamento que voce passou %d de horas no estacionamento\n",tempTotal);*/
     }
     else{
         tempTotal = 1;
