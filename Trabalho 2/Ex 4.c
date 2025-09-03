@@ -22,7 +22,7 @@ int main()
     if(chegadaHr < saidaHr){
         tempHr = saidaHr - chegadaHr;
         if(chegadaMin < saidaMin){
-            tempTotal = tempHr + 1; /*Se o minuto se saida for maior que o minuto de chegada acresenta uma hora no tempo do valor*/
+            tempTotal = tempHr + 1; /*Se o minuto de saida for maior que o minuto de chegada acresenta uma hora no tempo do valor*/
         }
         else{
             tempTotal = tempHr;
@@ -34,7 +34,7 @@ int main()
         tempHr = chegadaHr - saidaHr;
         tempHr = 24 - tempHr;
         if(chegadaMin < saidaMin){
-            tempTotal = tempHr + 1; /*Se o minuto se saida for maior que o minuto de chegada acresenta uma hora no tempo do valor*/
+            tempTotal = tempHr + 1; /*Se o minuto de saida for maior que o minuto de chegada acresenta uma hora no tempo do valor*/
         }
         else{
             tempTotal = tempHr;
