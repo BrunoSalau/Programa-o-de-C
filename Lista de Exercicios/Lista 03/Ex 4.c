@@ -60,6 +60,10 @@ int main()
             }
             case 5:{
                 i = 5;
+                break;
+            }
+            default:{
+                printf("\nOpcao nao existente!\n");
             }
         }
     }while(i != 5);
